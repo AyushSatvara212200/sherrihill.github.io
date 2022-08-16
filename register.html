@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Carousel-flickity/docs/flickity.min.css">
+    <link rel="stylesheet" href="./Bootstrap5/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./Carousel-flickity/docs/flickity.pkgd.min.js"></script>
+    <script src="./Bootstrap5/bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+
+    <style>
+        .flickity-button {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    <div class="main-carousel" style="width:300px; height:450px; background-color:whitesmoke;">
+        <div class="carousel-cell" style="width: 300px ; height: 450px; background-color: aqua;"><img
+                src="images/img300.webp" alt=""></div>
+        <div class="carousel-cell" style="width: 300px ; height: 450px; background-color: gold;"><img
+                src="images/img301.webp" alt=""></div>
+        <div class="carousel-cell" style="width: 300px ; height: 450px; background-color: green;"><img
+                src="images/img302.webp" alt=""></div>
+    </div>
+
+    <div class="main-carousel1" style="width:200px; height:200px; background-color:whitesmoke; margin-top: 50px;">
+        <div class="carousel-cell1" style="width: 200px ; height: 200px; background-color: aqua;">1</div>
+        <div class="carousel-cell1" style="width: 200px ; height: 200px; background-color: gold;">2</div>
+        <div class="carousel-cell1" style="width: 200px ; height: 200px; background-color: green;">3</div>
+    </div>
+
+    <script>
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            draggable: false,
+        });
+
+        $('.main-carousel1').flickity({
+            cellAlign: 'right',
+            contain: true,
+            pageDots: false
+        })
+    </script>
+</body>
+
+</html>
